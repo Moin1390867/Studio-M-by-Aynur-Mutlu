@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio M by Aynur Mutlu</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+header {
+  padding: 28px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+}
+.logo { font-size: 25px; letter-spacing: 5px; }
+.logo span { display: block; font-size: 10px; letter-spacing: 3px; color: #aaa; }
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 13px;
+}
+section { padding: 85px 8%; text-align: center; }
+.hero { min-height: 75vh; display: flex; flex-direction: column;
+justify-content: center; align-items: center; }
+.hero h1 { font-size: clamp(38px, 7vw, 76px); letter-spacing: 5px; }
+.hero p { color: #aaa; margin: 15px 0 30px; }
+h2 { font-size: 30px; letter-spacing: 3px; margin-bottom: 30px; }
+.line { width: 55px; height: 2px; background: #888; margin: 20px auto; }
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  margin: 7px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+.btn:hover { background: #aaa; }
+.dark { background: #1d1d1d; }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(190px,1fr));
+  gap: 15px;
+  max-width: 850px;
+  margin: auto;
+}
+.service {
+  border: 1px solid #555;
+  padding: 23px 12px;
+  color: #ddd;
+}
+p { color: #bbb; }
+.contact a { color: white; }
+footer {
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid #444;
+  color: #888;
+  font-size: 12px;
+}
+@media(max-width:650px) {
+  header { flex-direction: column; gap: 15px; }
+  nav a { margin: 0 7px; }
+  section { padding: 65px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">STUDIO M
+    <span>BY AYNUR MUTLU</span>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#ueber">Über uns</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>STUDIO M</h1>
+  <div class="line"></div>
+  <p>BY AYNUR MUTLU</p>
+  <h2>Dein Haar. Dein Style. Deine Persönlichkeit.</h2>
+  <p>Dein Friseursalon in 32791 Lage.</p>
+  <a class="btn" href="#kontakt">KONTAKT</a>
+</section>
+
+<section class="dark" id="leistungen">
+  <h2>UNSERE LEISTUNGEN</h2>
+  <div class="line"></div>
+  <div class="services">
+    <div class="service">Damenhaarschnitte</div>
+    <div class="service">Herrenhaarschnitte</div>
+    <div class="service">Waschen & Styling</div>
+    <div class="service">Colorationen</div>
+    <div class="service">Balayage</div>
+    <div class="service">Highlights</div>
+    <div class="service">Haarpflege</div>
+    <div class="service">Individuelle Beratung</div>
+  </div>
+</section>
+
+<section id="ueber">
+  <h2>ÜBER STUDIO M</h2>
+  <div class="line"></div>
+  <p>
+    Willkommen bei Studio M by Aynur Mutlu.
+    Dein Salon für individuelle Looks, professionelle
+    Haarpflege und persönliche Beratung.
+    Wir freuen uns auf deinen Besuch!
+  </p>
+</section>
+
+<section class="dark contact" id="kontakt">
+  <h2>TERMIN & KONTAKT</h2>
+  <div class="line"></div>
+  <p>Wir freuen uns auf dich!</p>
+  <br>
+  <a class="btn" href="tel:+4952329797915">JETZT ANRUFEN</a>
+  <a class="btn" href="https://www.instagram.com/studiombyaynur/" target="_blank">INSTAGRAM</a>
+  <a class="btn" href="https://www.newsha.de/" target="_blank">NEWSHA</a>
+  <a class="btn" href="https://www.planity.com/" target="_blank">PLANITY</a>
+  <br><br>
+  <p>Studio M by Aynur Mutlu</p>
+  <p>32791 Lage, Deutschland</p>
+  <p>Telefon: 05232 9797915</p>
+</section>
+
+<footer>
+  © 2026 Studio M by Aynur Mutlu · Alle Rechte vorbehalten
+</footer>
+
+</body>
+</html>
